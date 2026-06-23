@@ -1,0 +1,11 @@
+.DS_Store
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+data/
+papers/
+outputs/models/
+*.pptx
+*.xlsx

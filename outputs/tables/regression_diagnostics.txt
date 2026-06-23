@@ -1,0 +1,153 @@
+$model_1_summary
+
+Call:
+lm(formula = Rent ~ Type + District + Area + B + L + R + Floor + 
+    HF + Brand, data = rent_gz)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-14411  -1045   -205    659  74556 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   -854.612   2781.151  -0.307  0.75865    
+Type         -2721.987    911.776  -2.985  0.00286 ** 
+District南沙  2069.436   2769.345   0.747  0.45496    
+District增城  1026.155   2766.317   0.371  0.71070    
+District天河  5581.231   2752.413   2.028  0.04267 *  
+District海珠  4570.238   2753.966   1.660  0.09712 .  
+District番禺  2970.289   2753.545   1.079  0.28080    
+District白云  3684.253   2753.666   1.338  0.18102    
+District花都  1032.999   2777.799   0.372  0.71001    
+District荔湾  4087.198   2755.299   1.483  0.13808    
+District越秀  5341.446   2756.396   1.938  0.05274 .  
+District黄埔  3686.940   2760.336   1.336  0.18175    
+Area            84.160      1.960  42.931  < 2e-16 ***
+B            -1062.114     85.204 -12.466  < 2e-16 ***
+L             -463.108    113.760  -4.071 4.80e-05 ***
+R              795.838    129.030   6.168 7.86e-10 ***
+Floor           34.105      5.203   6.555 6.54e-11 ***
+HF低楼层        66.133    126.713   0.522  0.60177    
+HF高楼层      -204.214    118.402  -1.725  0.08467 .  
+Brand        -1088.723    873.853  -1.246  0.21290    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2748 on 2980 degrees of freedom
+Multiple R-squared:  0.5931,	Adjusted R-squared:  0.5905 
+F-statistic: 228.6 on 19 and 2980 DF,  p-value: < 2.2e-16
+
+
+$model_2_summary
+
+Call:
+lm(formula = Rent ~ Type + Bai + Cong + Pan + Hai + Hua + Huang + 
+    Li + Nan + Tian + Yue + Zeng + Area + B + L + R + Floor + 
+    HH + HM + HL + Brand, data = rent_gz)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-14411  -1045   -205    659  74556 
+
+Coefficients: (2 not defined because of singularities)
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   237.676    490.572   0.484  0.62808    
+Type        -2721.987    911.776  -2.985  0.00286 ** 
+Bai          2658.098    334.773   7.940 2.84e-15 ***
+Cong        -1026.155   2766.317  -0.371  0.71070    
+Pan          1944.134    335.312   5.798 7.42e-09 ***
+Hai          3544.083    334.110  10.608  < 2e-16 ***
+Hua             6.844    494.656   0.014  0.98896    
+Huang        2660.785    387.407   6.868 7.88e-12 ***
+Li           3061.043    347.858   8.800  < 2e-16 ***
+Nan          1043.280    449.541   2.321  0.02037 *  
+Tian         4555.076    323.601  14.076  < 2e-16 ***
+Yue          4315.290    354.050  12.188  < 2e-16 ***
+Zeng               NA         NA      NA       NA    
+Area           84.160      1.960  42.931  < 2e-16 ***
+B           -1062.114     85.204 -12.466  < 2e-16 ***
+L            -463.108    113.760  -4.071 4.80e-05 ***
+R             795.838    129.030   6.168 7.86e-10 ***
+Floor          34.105      5.203   6.555 6.54e-11 ***
+HH           -270.347    129.400  -2.089  0.03677 *  
+HM            -66.133    126.713  -0.522  0.60177    
+HL                 NA         NA      NA       NA    
+Brand       -1088.723    873.853  -1.246  0.21290    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2748 on 2980 degrees of freedom
+Multiple R-squared:  0.5931,	Adjusted R-squared:  0.5905 
+F-statistic: 228.6 on 19 and 2980 DF,  p-value: < 2.2e-16
+
+
+$model_1_ks_test
+
+	Asymptotic one-sample Kolmogorov-Smirnov test
+
+data:  error_1
+D = 0.18894, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+$model_1_shapiro_test
+
+	Shapiro-Wilk normality test
+
+data:  error_1
+W = 0.53658, p-value < 2.2e-16
+
+
+$model_1_mean_residual
+[1] 1.080783e-13
+
+$model_2_ks_test
+
+	Asymptotic one-sample Kolmogorov-Smirnov test
+
+data:  error_2
+D = 0.18894, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+$model_2_shapiro_test
+
+	Shapiro-Wilk normality test
+
+data:  error_2
+W = 0.53658, p-value < 2.2e-16
+
+
+$model_2_mean_residual
+[1] 9.822543e-14
+
+$model_1_vif
+              GVIF Df GVIF^(1/(2*Df))
+Type     37.034079  1        6.085563
+District  1.354447 10        1.015285
+Area      3.241481  1        1.800411
+B         3.503577  1        1.871784
+L         1.731313  1        1.315794
+R         1.880383  1        1.371271
+Floor     1.202526  1        1.096598
+HF        1.027345  2        1.006767
+Brand    34.616236  1        5.883556
+
+$model_2_vif
+     Type       Bai      Cong       Pan       Hai       Hua     Huang        Li 
+37.034079  6.035487  1.013240  5.325250  5.931269  1.593422  2.580951  4.068759 
+      Nan      Tian       Yue      Area         B         L         R     Floor 
+ 1.804413  7.668388  4.120122  3.241481  3.503577  1.731313  1.880383  1.202526 
+       HH        HM     Brand 
+ 1.506233  1.503104 34.616236 
+
+$reduced_model_vif
+    Area        R        B        L 
+1.481951 1.773344 1.648991 1.590609 
+
+$model_1_kappa
+[1] 63807.28
+
+$model_2_kappa
+[1] 4661.122
+

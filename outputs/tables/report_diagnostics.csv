@@ -1,0 +1,10 @@
+"Diagnostic","Value"
+"Correlation between Type and Brand",0.98533248097054
+"District fixed effects: partial F-statistic",59.0476981891623
+"District fixed effects: p-value",9.70261951045191e-100
+"Floor-category indicators: partial F-statistic",2.58380715172968
+"Floor-category indicators: p-value",0.0756551170680049
+"Levels model: Breusch-Pagan statistic",87.897777736398
+"Levels model: Breusch-Pagan p-value",6.89260694310394e-21
+"Log model: Breusch-Pagan statistic",17.7790654484373
+"Log model: Breusch-Pagan p-value",2.4809809286601e-05
