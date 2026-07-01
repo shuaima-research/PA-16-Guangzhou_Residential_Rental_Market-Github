@@ -1,4 +1,4 @@
-# Empirical Analysis of Guangzhou Residential Rental Markets
+# Rent as a Map of the City: Space, Centrality, and Guangzhou's Rental Market
 
 This repository contains the analysis scripts and derived outputs for a
 September 2021 study of residential rental markets in Guangzhou, China.
